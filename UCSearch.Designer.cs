@@ -34,13 +34,15 @@
             this.dtCheckIn = new System.Windows.Forms.DateTimePicker();
             this.lblCheckIn = new System.Windows.Forms.Label();
             this.lblDuration = new System.Windows.Forms.Label();
-            this.cbDuration = new System.Windows.Forms.ComboBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.cbRoomType = new System.Windows.Forms.ComboBox();
             this.lblRoomType = new System.Windows.Forms.Label();
             this.lblCheckOut = new System.Windows.Forms.Label();
             this.lblCheckOutValue = new System.Windows.Forms.Label();
+            this.nudDuration = new System.Windows.Forms.NumericUpDown();
+            this.lblNights = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPlace
@@ -103,47 +105,6 @@
             this.lblDuration.TabIndex = 8;
             this.lblDuration.Text = "Duration";
             // 
-            // cbDuration
-            // 
-            this.cbDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDuration.FormattingEnabled = true;
-            this.cbDuration.Items.AddRange(new object[] {
-            "1 Night",
-            "2 Nights",
-            "3 Nights",
-            "4 Nights",
-            "5 Nights",
-            "6 Nights",
-            "7 Nights",
-            "8 Nights",
-            "9 Nights",
-            "10 Nights",
-            "11 Nights",
-            "12 Nights",
-            "13 Nights",
-            "14 Nights",
-            "15 Nights",
-            "16 Nights",
-            "17 Nights",
-            "18 Nights",
-            "19 Nights",
-            "20 Nights",
-            "21 Nights",
-            "22 Nights",
-            "23 Nights",
-            "24 Nights",
-            "25 Nights",
-            "26 Nights",
-            "27 Nights",
-            "28 Nights",
-            "29 Nights",
-            "30 Nights"});
-            this.cbDuration.Location = new System.Drawing.Point(382, 232);
-            this.cbDuration.Name = "cbDuration";
-            this.cbDuration.Size = new System.Drawing.Size(231, 45);
-            this.cbDuration.TabIndex = 9;
-            this.cbDuration.SelectedIndexChanged += new System.EventHandler(this.cbDuration_SelectedIndexChanged);
-            // 
             // eventLog1
             // 
             this.eventLog1.SynchronizingObject = this;
@@ -191,15 +152,35 @@
             this.lblCheckOutValue.Size = new System.Drawing.Size(0, 37);
             this.lblCheckOutValue.TabIndex = 13;
             // 
+            // nudDuration
+            // 
+            this.nudDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.nudDuration.Location = new System.Drawing.Point(382, 230);
+            this.nudDuration.Name = "nudDuration";
+            this.nudDuration.Size = new System.Drawing.Size(95, 44);
+            this.nudDuration.TabIndex = 15;
+            this.nudDuration.ValueChanged += new System.EventHandler(this.nudDuration_ValueChanged);
+            // 
+            // lblNights
+            // 
+            this.lblNights.AutoSize = true;
+            this.lblNights.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNights.Location = new System.Drawing.Point(483, 237);
+            this.lblNights.Name = "lblNights";
+            this.lblNights.Size = new System.Drawing.Size(109, 37);
+            this.lblNights.TabIndex = 16;
+            this.lblNights.Text = "Nights";
+            // 
             // UCSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblNights);
+            this.Controls.Add(this.nudDuration);
             this.Controls.Add(this.lblCheckOutValue);
             this.Controls.Add(this.lblCheckOut);
             this.Controls.Add(this.lblRoomType);
             this.Controls.Add(this.cbRoomType);
-            this.Controls.Add(this.cbDuration);
             this.Controls.Add(this.lblDuration);
             this.Controls.Add(this.lblCheckIn);
             this.Controls.Add(this.dtCheckIn);
@@ -209,6 +190,7 @@
             this.Name = "UCSearch";
             this.Size = new System.Drawing.Size(1002, 646);
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,11 +204,12 @@
         private System.Windows.Forms.DateTimePicker dtCheckIn;
         private System.Windows.Forms.Label lblCheckIn;
         private System.Windows.Forms.Label lblDuration;
-        private System.Windows.Forms.ComboBox cbDuration;
         private System.Diagnostics.EventLog eventLog1;
         private System.Windows.Forms.Label lblRoomType;
         private System.Windows.Forms.ComboBox cbRoomType;
         private System.Windows.Forms.Label lblCheckOutValue;
         private System.Windows.Forms.Label lblCheckOut;
+        private System.Windows.Forms.NumericUpDown nudDuration;
+        private System.Windows.Forms.Label lblNights;
     }
 }

@@ -17,7 +17,9 @@ namespace Windows_Final_Term_Project
             InitializeComponent();
             txtPlace.Text = "City, Hotel, Place to go";
             txtPlace.ForeColor = Color.LightGray;
-            cbDuration.SelectedIndex = 0;
+            nudDuration.Value = 1; 
+            nudDuration.Minimum = 1;
+            nudDuration.Maximum = 30; 
             cbRoomType.SelectedIndex = 0;
             dtCheckIn.MinDate = DateTime.Now;
             dtCheckIn.MaxDate = DateTime.Now.AddYears(1); 
@@ -42,17 +44,17 @@ namespace Windows_Final_Term_Project
         }
         private void lblCheckOutValue_Load()
         {
-            int nights = (cbDuration.SelectedIndex + 1);
+            int nights = (int) nudDuration.Value;
             DateTime dateCheckout = dtCheckIn.Value.AddDays(nights);
             lblCheckOutValue.Text = dateCheckout.ToShortDateString();
         }
 
-        private void cbDuration_SelectedIndexChanged(object sender, EventArgs e)
+        private void dtCheckIn_ValueChanged(object sender, EventArgs e)
         {
             lblCheckOutValue_Load();
         }
 
-        private void dtCheckIn_ValueChanged(object sender, EventArgs e)
+        private void nudDuration_ValueChanged(object sender, EventArgs e)
         {
             lblCheckOutValue_Load();
         }
