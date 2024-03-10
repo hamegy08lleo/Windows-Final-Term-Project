@@ -16,7 +16,7 @@ namespace Windows_Final_Term_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FCustomer());
         }
     }
 }

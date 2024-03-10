@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FCustomer.Designer.cs">
+      <DependentUpon>FCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHotelOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHotelOwner.Designer.cs">
+      <DependentUpon>FHotelOwner.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,8 +66,11 @@
     <Compile Include="UCSearch.Designer.cs">
       <DependentUpon>UCSearch.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FCustomer.resx">
+      <DependentUpon>FCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHotelOwner.resx">
+      <DependentUpon>FHotelOwner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

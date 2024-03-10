@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Windows_Final_Term_Project
 {
-    public partial class Form1 : Form
+    public partial class FHotelOwner : Form
     {
-        public Form1()
+        public FHotelOwner()
         {
             InitializeComponent();
         }
