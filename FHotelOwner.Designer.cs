@@ -33,6 +33,8 @@
             this.nudDuration = new System.Windows.Forms.NumericUpDown();
             this.lblNumOfRooms = new System.Windows.Forms.Label();
             this.btnPost = new System.Windows.Forms.Button();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,14 +85,37 @@
             this.btnPost.Text = "Post";
             this.btnPost.UseVisualStyleBackColor = false;
             // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(506, 298);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(89, 37);
+            this.lblPrice.TabIndex = 32;
+            this.lblPrice.Text = "Price";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(513, 343);
+            this.txtPrice.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(389, 44);
+            this.txtPrice.TabIndex = 36;
+            this.txtPrice.Enter += new System.EventHandler(this.txtPrice_Enter);
+            this.txtPrice.Leave += new System.EventHandler(this.txtPrice_Leave);
+            // 
             // FHotelOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 594);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.btnPost);
             this.Controls.Add(this.lblRoonms);
             this.Controls.Add(this.nudDuration);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblNumOfRooms);
             this.Controls.Add(this.ucSearch1);
             this.Name = "FHotelOwner";
@@ -108,5 +133,7 @@
         private System.Windows.Forms.NumericUpDown nudDuration;
         private System.Windows.Forms.Label lblNumOfRooms;
         private System.Windows.Forms.Button btnPost;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.TextBox txtPrice;
     }
 }
