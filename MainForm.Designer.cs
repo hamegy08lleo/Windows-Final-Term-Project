@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.penalTop = new System.Windows.Forms.Panel();
-            this.panelCenter = new System.Windows.Forms.Panel();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnBooking = new System.Windows.Forms.Button();
+            this.bthPanership = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblLogo = new System.Windows.Forms.Label();
-            this.bthPanership = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.btnBooking = new System.Windows.Forms.Button();
+            this.panelCenter = new System.Windows.Forms.Panel();
             this.penalTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,14 +54,47 @@
             this.penalTop.Size = new System.Drawing.Size(1500, 169);
             this.penalTop.TabIndex = 0;
             // 
-            // panelCenter
+            // btnRegister
             // 
-            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenter.Location = new System.Drawing.Point(0, 169);
-            this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(1500, 831);
-            this.panelCenter.TabIndex = 0;
-            this.panelCenter.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCenter_Paint);
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnRegister.Location = new System.Drawing.Point(1287, 30);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(186, 73);
+            this.btnRegister.TabIndex = 1;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnLogin.Location = new System.Drawing.Point(1080, 30);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(186, 73);
+            this.btnLogin.TabIndex = 1;
+            this.btnLogin.Text = "Log in";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            // 
+            // btnBooking
+            // 
+            this.btnBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnBooking.Location = new System.Drawing.Point(631, 30);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(186, 73);
+            this.btnBooking.TabIndex = 1;
+            this.btnBooking.Text = "Booking";
+            this.btnBooking.UseVisualStyleBackColor = true;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
+            // 
+            // bthPanership
+            // 
+            this.bthPanership.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.bthPanership.Location = new System.Drawing.Point(854, 30);
+            this.bthPanership.Name = "bthPanership";
+            this.bthPanership.Size = new System.Drawing.Size(192, 73);
+            this.bthPanership.TabIndex = 1;
+            this.bthPanership.Text = "Parnership";
+            this.bthPanership.UseVisualStyleBackColor = true;
+            this.bthPanership.Click += new System.EventHandler(this.bthPanership_Click);
             // 
             // pictureBox1
             // 
@@ -83,45 +116,13 @@
             this.lblLogo.TabIndex = 0;
             this.lblLogo.Text = "Horizon Trail Travel";
             // 
-            // bthPanership
+            // panelCenter
             // 
-            this.bthPanership.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.bthPanership.Location = new System.Drawing.Point(860, 30);
-            this.bthPanership.Name = "bthPanership";
-            this.bthPanership.Size = new System.Drawing.Size(186, 73);
-            this.bthPanership.TabIndex = 1;
-            this.bthPanership.Text = "Parnership";
-            this.bthPanership.UseVisualStyleBackColor = true;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnLogin.Location = new System.Drawing.Point(1080, 30);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(186, 73);
-            this.btnLogin.TabIndex = 1;
-            this.btnLogin.Text = "Log in";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnRegister.Location = new System.Drawing.Point(1287, 30);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(186, 73);
-            this.btnRegister.TabIndex = 1;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            // 
-            // btnBooking
-            // 
-            this.btnBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnBooking.Location = new System.Drawing.Point(631, 30);
-            this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(186, 73);
-            this.btnBooking.TabIndex = 1;
-            this.btnBooking.Text = "Booking";
-            this.btnBooking.UseVisualStyleBackColor = true;
+            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCenter.Location = new System.Drawing.Point(0, 169);
+            this.panelCenter.Name = "panelCenter";
+            this.panelCenter.Size = new System.Drawing.Size(1500, 831);
+            this.panelCenter.TabIndex = 0;
             // 
             // MainForm
             // 
