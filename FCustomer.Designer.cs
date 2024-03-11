@@ -42,9 +42,9 @@
             // 
             // ucSearch1
             // 
-            this.ucSearch1.Location = new System.Drawing.Point(0, 0);
+            this.ucSearch1.Location = new System.Drawing.Point(-2, 0);
             this.ucSearch1.Name = "ucSearch1";
-            this.ucSearch1.Size = new System.Drawing.Size(966, 558);
+            this.ucSearch1.Size = new System.Drawing.Size(979, 582);
             this.ucSearch1.TabIndex = 24;
             // 
             // lblNights
@@ -99,7 +99,7 @@
             // 
             this.lblCheckIn.AutoSize = true;
             this.lblCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheckIn.Location = new System.Drawing.Point(54, 307);
+            this.lblCheckIn.Location = new System.Drawing.Point(46, 307);
             this.lblCheckIn.Name = "lblCheckIn";
             this.lblCheckIn.Size = new System.Drawing.Size(142, 37);
             this.lblCheckIn.TabIndex = 26;
@@ -108,9 +108,10 @@
             // dtCheckIn
             // 
             this.dtCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtCheckIn.Location = new System.Drawing.Point(58, 352);
+            this.dtCheckIn.Location = new System.Drawing.Point(53, 351);
             this.dtCheckIn.Name = "dtCheckIn";
-            this.dtCheckIn.Size = new System.Drawing.Size(275, 44);
+            this.dtCheckIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtCheckIn.Size = new System.Drawing.Size(273, 44);
             this.dtCheckIn.TabIndex = 25;
             this.dtCheckIn.ValueChanged += new System.EventHandler(this.dtCheckIn_ValueChanged);
             // 
@@ -140,6 +141,7 @@
             this.Controls.Add(this.lblCheckIn);
             this.Controls.Add(this.dtCheckIn);
             this.Controls.Add(this.ucSearch1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FCustomer";
             this.Text = "FCustomer";
             ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).EndInit();
