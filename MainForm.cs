@@ -17,9 +17,16 @@ namespace Windows_Final_Term_Project
             InitializeComponent();
         }
 
-        private void panelCenter_Paint(object sender, PaintEventArgs e)
+        private void btnBooking_Click(object sender, EventArgs e)
         {
-            AddControls(new FCustomer());
+            FCustomer fcustomer = new FCustomer();
+            fcustomer.Show();
+        }
+
+        private void bthPanership_Click(object sender, EventArgs e)
+        {
+            FHotelOwner fHotelOwner = new FHotelOwner();
+            fHotelOwner.Show();
         }
     }
 }
